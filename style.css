@@ -1,0 +1,414 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 200vh;
+}
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+header div.box{
+    
+    height: 20vh;
+    width: 100%;
+}
+
+header nav{
+    background-image: linear-gradient(-180deg,#f53d2d,#f63);
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0px;
+}
+
+header nav div.nav{
+    /* background-color: aqua; */
+    width: 80%;
+}
+
+header nav div.nav div.top{
+    height: 30%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav div.nav div.top a:hover{
+    opacity: 0.5;
+}
+
+header nav div.nav div.top div.left{
+    width: 40%;
+    height: 100%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;  
+}
+
+div.line{
+    width: 2px;
+    height: 60%;
+    background-color: rgba(255, 255, 255, 0.464);
+}
+
+header nav div.nav div.top div.left a{
+    color: white;
+    text-decoration: none;
+    font-size: 10pt;
+    text-transform: capitalize;
+}
+
+
+header nav div.nav div.top div.left .logo{
+    font-size: 15pt;
+}
+
+header nav div.nav div.top div.right .logo{
+    font-size: 15pt;
+}
+
+header nav div.nav div.top div.right{
+    width: 40%;
+    height: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+header nav div.nav div.top div.right a{
+    color: white;
+    font-size: 10pt;
+}
+
+a{
+    text-decoration: none;
+}
+
+header nav div.nav div.bottom{
+    display: flex;
+    align-items: center;
+    height: 70%;
+    /* background-color: blue; */
+}
+
+header nav div.nav div.bottom div.Shopee{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+header nav div.nav div.bottom div.Shopee a{
+    font-size: 30pt;
+    color: white;
+}
+
+header nav div.nav div.bottom div.Shopee span.Store-logo{
+    font-size: 35pt;
+}
+
+header nav div.nav div.top div.right a.special{
+    display: flex;
+    transform: rotate(180deg);
+}
+
+header nav div.nav div.bottom div.bar{
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 60%;
+    height: 100%;
+}
+
+header nav div.nav div.bottom div.bar div.topbar{
+    background-color: white;
+    border-radius: 3px;
+    height: 45%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header nav div.nav div.bottom div.bar div.topbar form{
+    width: 100%;
+    height: 100%;
+}
+
+header nav div.nav div.bottom div.bar div.topbar form div.entry{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background-color: white; */
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header nav div.nav div.bottom div.bar div.topbar form div.entry .search-entry{
+    width: 90%;
+    height: 100%;
+    border: none;
+    padding: 10px;
+}
+
+header nav div.nav div.bottom div.bar div.topbar form div.entry .search-btn{
+    background-color: #fb5533;
+    border-radius: 3px;
+    margin-right: 5px;
+    width: 10%;
+    height: 80%;
+    border: none;
+    font-size: 15pt;
+}
+
+header nav div.nav div.bottom div.bar div.bottombar{
+    /* background-color: rgb(3, 2, 2); */
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+} 
+
+header nav div.nav div.bottom div.bar div.bottombar a{
+    color: rgba(255, 255, 255, 0.768);
+    font-size: 9pt;
+}
+
+header nav div.nav div.bottom div.logocart{
+    transform: rotateY(180deg);
+    /* background-color: black; */
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav div.nav div.bottom div.logocart a{
+    font-size: 30pt;
+}
+
+.item1{
+    grid-area: menu;
+}
+.item2{
+    grid-area: main;
+}
+.item3{
+    grid-area: footer;
+}
+
+div.grid{
+    display: grid;
+    grid-template-areas: 
+    'menu menu  main'
+    'menu menu footer';
+    gap: 10px;
+    padding: 10px;
+    width: 80%;
+    height: 70%;
+}
+
+section.hero{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.grid > div{
+    background-color: yellowgreen;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.grid div.item1{
+    background-image: url(id-50009109-d23776c306a9606146e967d9abef8027_xxhdpi.png);
+    background-size: 100% 100%;
+}
+
+.grid div.item2{
+    background-image: url(right.png);
+    background-size: 100% 100%;
+}
+
+.grid div.item3{
+    background-image: url(footer.png);
+    background-size: 100% 100%;
+}
+
+
+section.content{
+    background-color: deepskyblue;
+    width: 100%;
+    height: 50vh;
+}
+
+header section.hero div.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header section.hero div.nav div.logo{
+    font-size: 30pt;
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+header section.hero div.nav div.text{
+    display: flex;
+    gap: 15px;
+    text-align: center;
+}
+
+header section.hero div.nav div.text a{
+    color: black;
+    text-decoration: none;
+}
+
+header section.hero div.nav{
+    /* background-color: gray; */
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+header section.hero div.nav div{
+    /* background-color: aqua; */
+    width: 9%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+header section.hero div.nav div.one div.img{
+    background-image: url(one.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 120%;
+    margin-bottom: 2px;
+}
+
+header section.hero div.nav > div:hover{
+    transform: translateY(-2px);
+    transition: 0.1s;
+}
+
+
+header section.hero div.nav div div.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+header section.hero div.nav div div.text a{
+    font-size: 10pt;
+    text-align: center;
+}
+
+header section.hero div.nav div.two div.img{
+    background-image: url(two.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 120%;
+    margin-bottom: 2px;
+}
+
+header section.hero div.nav div.three div.img{
+    background-image: url(three.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 120%;
+    margin-bottom: 2px;
+}
+
+header section.hero div.nav div.four div.img{
+    background-image: url(inFashion.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 120%;
+}
+
+header section.hero div.nav div.five div.img{
+    background-image: url(five.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 120%;
+}
+
+header section.hero div.nav div.six div.img{
+    background-image: url(six.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 120%;
+}
+
+header section.hero div.nav div.seven div.img{
+    background-image: url(seven.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 120%;
+}
+
+header section.hero div.nav div.eight div.img{
+    background-image: url(eight.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 120%;
+}
+
+header section.hero div.nav div.nine div.img{
+    background-image: url(nine.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 120%;
+}
+
+header section.hero div.nav div.ten div.img{
+    background-image: url(ten.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 120%;
+}
+
+.search-btn:hover{
+    opacity: 0.2;
+}
